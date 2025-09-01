@@ -6,11 +6,15 @@ import (
 	"net/http"
 )
 
+<<<<<<< HEAD
 var calls []string
 var stats map[string]int
 
 func main() {
 	stats = map[string]int{}
+=======
+func main() {
+>>>>>>> e1c67547b9b85dd1933921dac0613b58c5b5bb20
 	// Your solution goes here. Good luck!
 	http.HandleFunc("/hello", LocalHost)
 	log.Fatal(http.ListenAndServe(":8080", nil))
